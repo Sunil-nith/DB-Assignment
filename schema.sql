@@ -1,7 +1,7 @@
 CREATE TABLE Product_Category (
     id INT PRIMARY KEY,
     name VARCHAR(255),
-    desc TEXT,
+    `desc` TEXT,
     created_at TIMESTAMP,
     modified_at TIMESTAMP,
     deleted_at TIMESTAMP
@@ -18,7 +18,7 @@ CREATE TABLE Product_Inventory (
 CREATE TABLE Discount (
     id INT PRIMARY KEY,
     name VARCHAR(255),
-    desc TEXT,
+    `desc` TEXT,
     discount_percent DECIMAL(5,2),
     active BOOLEAN,
     created_at TIMESTAMP,
@@ -29,7 +29,7 @@ CREATE TABLE Discount (
 CREATE TABLE Product (
     id INT PRIMARY KEY,
     name VARCHAR(255),
-    desc TEXT,
+    `desc` TEXT,
     SKU VARCHAR(50),
     category_id INT,
     inventory_id INT,
